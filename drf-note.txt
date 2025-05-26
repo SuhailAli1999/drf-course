@@ -1,0 +1,15 @@
+python manage.py makemigrations
+python manage.py migrate    
+python manage.py graph_models api > models.dot
+
+
+
+
+python -m venv .venv
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
+.venv\Scripts\Activate.ps1
+deactivate
+
+
+
+python manage.py runserver
